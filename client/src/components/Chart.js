@@ -13,7 +13,6 @@ export default class Chart extends Component {
             data={{
               labels: this.props.data
                 .map(a => this.dateTransformer(a.Created_date))
-                .reverse()
                 .slice(0, 10)
                 .reverse(),
               datasets: [
@@ -21,7 +20,6 @@ export default class Chart extends Component {
                   label: "Temperature",
                   data: this.props.data
                     .map(a => a.Temperature)
-                    .reverse()
                     .slice(0, 10)
                     .reverse(),
                   backgroundColor: "rgba(255,99,132,0.6)"
@@ -36,7 +34,6 @@ export default class Chart extends Component {
             data={{
               labels: this.props.data
                 .map(a => this.dateTransformer(a.Created_date))
-                .reverse()
                 .slice(0, 10)
                 .reverse(),
               datasets: [
@@ -44,7 +41,6 @@ export default class Chart extends Component {
                   label: "Moisture",
                   data: this.props.data
                     .map(a => a.Moisture)
-                    .reverse()
                     .slice(0, 10)
                     .reverse(),
                   backgroundColor: "rgba(0,255,255,0.5)"
@@ -64,7 +60,6 @@ export default class Chart extends Component {
             data={{
               labels: this.props.data
                 .map(a => this.dateTransformer(a.Created_date))
-                .reverse()
                 .slice(0, 10)
                 .reverse(),
               datasets: [
@@ -72,7 +67,6 @@ export default class Chart extends Component {
                   label: "Light",
                   data: this.props.data
                     .map(a => a.Light)
-                    .reverse()
                     .slice(0, 10)
                     .reverse(),
                   backgroundColor: "rgba(255,255,0,0.6)"
