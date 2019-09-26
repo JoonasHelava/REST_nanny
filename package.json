@@ -1,0 +1,31 @@
+{
+  "name": "rest_api",
+  "version": "1.0.0",
+  "description": "restful api for embedded systems",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server",
+    "start": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoonasHelava/REST_nanny.git"
+  },
+  "keywords": [
+    "RESTful",
+    "API",
+    "Plant nanny"
+  ],
+  "author": "Joonas",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^2.8.0",
+    "concurrently": "^4.1.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.0",
+    "react-chartjs-2": "^2.7.6"
+  }
+}
